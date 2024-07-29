@@ -1,0 +1,1 @@
+This is a landing page I've made to demonstrate skills learned from [The Odin Project](https://www.theodinproject.com/).
