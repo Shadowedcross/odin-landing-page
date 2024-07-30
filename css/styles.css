@@ -1,28 +1,119 @@
-.header {
-    display: flex;
-    align-items: center;
-    background-color: #1f2937;
-    color: #e5e7eb;
-    font-size: 18px;
-    padding: 8px;
-}
-
-.logo {
-    color: #f9faf8;
-    font-size: 24px;
-    font-weight: bold;
-    flex: 1;
-    margin-left: 125px;
-}
-
-ul {
-    padding: 0;
-    margin: 0 125px 0 0;
-    display: flex;
-    gap: 12px;
-    list-style-type: none;
+:root {
+  --dark-background-color: #1f2937;
+  --high-contrast-white: #f9faf8;
+  --low-contrast-white: #e5e7eb;
+  --active-normal: dodgerblue;
+  --hover-normal: cornflowerblue;
+  --header-side-margin: 125px;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #3B81F6;
+  border: none;
+  border-radius: 8px;
+  color: var(--low-contrast-white);
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 7px;
+  width: 115px;
+}
+
+button:hover {
+  background-color: var(--hover-normal);
+}
+
+button:active {
+  background-color: #e5e7eb;
+  color: #3B81F6;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0 10% 0 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: cornflowerblue;
+}
+
+.header, .hero-subtext {
+  align-items: center;
+  background-color: var(--dark-background-color);
+  color: var(--low-contrast-white);
+  display: flex;
+  font-size: 18px;
+}
+
+.header {
+  padding: 10px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: var(--high-contrast-white);
+  flex: 1;
+  font-size: 24px;
+  font-weight: bolder;
+  /*margin-left: var(--header-side-margin);*/
+  margin-left: 10%;
+}
+
+.hero-section {
+  align-items: center;
+  background-color: var(--dark-background-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 100px 10% 120px 10%;
+}
+
+.hero-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.hero-heading {
+  color: var(--high-contrast-white);
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero-subtext {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.hero-image {
+  background-color: #f9faf8;
+  min-width: 206px;
+  width: 500px;
+  /*min-height: 212px*/
+  flex: 0 1 auto;
+}
+
+
+
