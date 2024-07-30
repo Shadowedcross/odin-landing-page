@@ -242,4 +242,13 @@ p {
   /*margin-right: 100px;*/
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-background-color);
+  padding: 40px;
+  color: var(--low-contrast-white);
+}
+
 
