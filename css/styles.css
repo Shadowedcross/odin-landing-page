@@ -58,6 +58,11 @@ a:hover {
   color: cornflowerblue;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .header, .hero-subtext {
   align-items: center;
   background-color: var(--dark-background-color);
@@ -193,6 +198,44 @@ a:hover {
   font-size: 22px;
 }
 
+.action-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.action-panel {
+  display: flex;
+  background-color: #3B81F6;
+  width: 100%;
+  min-height: 130px;
+  border-radius: 5px;
+  margin: 90px 170px 90px 170px;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-text {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  margin-left: 100px
+}
+
+.action-text-header {
+  color: var(--high-contrast-white);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.action-text-subtext {
+  color: var(--low-contrast-white);
+}
+
+.action-button {
+  border-style: solid;
+  border-width: 2px;
+  margin-right: 100px;
+}
 
 
