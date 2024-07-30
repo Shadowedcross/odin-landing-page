@@ -179,7 +179,7 @@ p {
 .quote-body {
   align-items: center;
   justify-content: center;
-  margin: 75px 20% 75px 20%;
+  margin: 100px 20% 100px 20%;
   display: flex;
   flex-flow: column nowrap;
 }
