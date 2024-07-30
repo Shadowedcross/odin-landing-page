@@ -117,8 +117,9 @@ a:hover {
 
 .info-section {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .info-header {
@@ -130,7 +131,9 @@ a:hover {
 
 .illustration-section {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   gap: 45px;
 }
 
@@ -159,6 +162,36 @@ a:hover {
   color: #58616E;
 }
 
+.quote-section {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #e5e7eb;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.quote-body {
+  align-items: center;
+  justify-content: center;
+  margin: 75px 20% 75px 20%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.quote-author {
+  margin-top: 0;
+  align-self: end;
+  font-weight: bolder;
+  font-size: 22px;
+}
 
 
 
